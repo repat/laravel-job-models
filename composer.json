@@ -1,7 +1,7 @@
 {
     "name": "repat/laravel-job-models",
     "description": "Eloquent Models for the tables job and job_fails as created by artisan queue:table and queue:failed-table",
-    "keywords": ["laravel", "eloquent", "job", "jobs", "model", "job_fails", "artisan", "queue:table"],
+    "keywords": ["laravel", "eloquent", "job", "jobs", "model", "job_fails", "artisan", "queue table"],
     "homepage": "https://repat.de",
     "license": "MIT",
     "version" : "0.1",
