@@ -31,7 +31,7 @@ $job->command; // unserialized
 * MIT, see [LICENSE](https://github.com/repat/laravel-job-models/blob/master/LICENSE)
 
 ## Version
-* Version 0.1
+* Version 0.2
 
 ## Contact
 #### repat
