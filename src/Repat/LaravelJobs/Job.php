@@ -2,6 +2,8 @@
 
 namespace Repat\LaravelJobs;
 
+use Illuminate\Support\Facades\Config;
+
 class Job extends \Illuminate\Database\Eloquent\Model
 {
     use Attributes;
@@ -14,4 +16,10 @@ class Job extends \Illuminate\Database\Eloquent\Model
         'available_at' => 'datetime',
         'created_at' => 'datetime',
     ];
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->table = Config::get('queue.connections.' . (Config::get('queue.default', 'database')) . '.table', 'jobs');
+    }
 }
