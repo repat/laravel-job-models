@@ -2,7 +2,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/repat/laravel-job-models.svg?style=flat-square)](https://packagist.org/packages/repat/laravel-job-models)
 [![Total Downloads](https://img.shields.io/packagist/dt/repat/laravel-job-models.svg?style=flat-square)](https://packagist.org/packages/repat/laravel-job-models)
 
-**laravel-job-models** contains 2 Eloquent models for the tables `jobs` and `job_fails` as created by the 2 artisan commands `queue:table` and `queue:failed-table`.
+**laravel-job-models** contains 2 Eloquent models for the tables `jobs` and `job_fails` (or however they're defined in the `queue.php` config file) as created by the 2 artisan commands `queue:table` and `queue:failed-table`.
 
 ## Installation
 `$ composer require repat/laravel-job-models`
@@ -31,7 +31,7 @@ $job->command; // unserialized
 * MIT, see [LICENSE](https://github.com/repat/laravel-job-models/blob/master/LICENSE)
 
 ## Version
-* Version 0.3
+* Version 0.4
 
 ## Contact
 #### repat

@@ -4,7 +4,7 @@
     "keywords": ["laravel", "eloquent", "job", "jobs", "model", "job_fails", "artisan", "queue table"],
     "homepage": "https://repat.de",
     "license": "MIT",
-    "version" : "0.3",
+    "version" : "0.4",
     "authors": [
         {"name": "repat", "email": "repat@repat.de"}
     ],
