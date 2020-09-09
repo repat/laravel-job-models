@@ -13,7 +13,7 @@
 There is a casting to `\Carbon\Carbon` objects for: `reserved_at`, `available_at`, `created_at` and `failed_at` and a casting to array for `payload`.
 
 #### Attributes/ Mutators
-There are getters for all the keys of the payload, including the `data` array. For more information, see the [Laravel Documentation on Eloquent Mutators](https://laravel.com/docs/5.8/eloquent-mutators).
+There are getters for all the keys of the payload, including the `data` array. For more information, see the [Laravel Documentation on Eloquent Mutators](https://laravel.com/docs/8.x/eloquent-mutators).
 
 ```php
 $job = \Repat\LaravelJobs\Job::first();
@@ -31,7 +31,7 @@ $job->command; // unserialized
 * MIT, see [LICENSE](https://github.com/repat/laravel-job-models/blob/master/LICENSE)
 
 ## Version
-* Version 0.4
+* Version 0.5
 
 ## Contact
 #### repat
