@@ -1,18 +1,22 @@
 # laravel-job-models
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/repat/laravel-job-models.svg?style=flat-square)](https://packagist.org/packages/repat/laravel-job-models)
 [![Total Downloads](https://img.shields.io/packagist/dt/repat/laravel-job-models.svg?style=flat-square)](https://packagist.org/packages/repat/laravel-job-models)
 
 **laravel-job-models** contains 2 Eloquent models for the tables `jobs` and `job_fails` (or however they're defined in the `queue.php` config file) as created by the 2 artisan commands `queue:table` and `queue:failed-table`.
 
 ## Installation
+
 `$ composer require repat/laravel-job-models`
 
 ## Documentation
 
-#### Casting
+### Casting
+
 There is a casting to `\Carbon\Carbon` objects for: `reserved_at`, `available_at`, `created_at` and `failed_at` and a casting to array for `payload`.
 
-#### Attributes/ Mutators
+### Attributes/ Mutators
+
 There are getters for all the keys of the payload, including the `data` array. For more information, see the [Laravel Documentation on Eloquent Mutators](https://laravel.com/docs/8.x/eloquent-mutators).
 
 ```php
@@ -28,14 +32,18 @@ $job->command; // unserialized
 ```
 
 ## License
+
 * MIT, see [LICENSE](https://github.com/repat/laravel-job-models/blob/master/LICENSE)
 
 ## Version
-* Version 0.5
+
+* Version 0.5.1
 
 ## Contact
-#### repat
-* Homepage: https://repat.de
+
+### repat
+
+* Homepage: [https://repat.de](https://repat.de)
 * e-mail: repat@repat.de
 * Twitter: [@repat123](https://twitter.com/repat123 "repat123 on twitter")
 
