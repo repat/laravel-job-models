@@ -15,9 +15,9 @@ class JobFail extends \Illuminate\Database\Eloquent\Model
         'failed_at' => 'datetime',
     ];
 
-    public function __construct()
+    public function __construct(array $attributes = [])
     {
-        parent::__construct();
+        parent::__construct($attributes);
         $this->table = Config::get('queue.failed.table', 'job_fails');
     }
 }

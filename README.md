@@ -37,7 +37,7 @@ $job->command; // unserialized
 
 ## Version
 
-* Version 0.6
+* Version 0.7
 
 ## Contact
 

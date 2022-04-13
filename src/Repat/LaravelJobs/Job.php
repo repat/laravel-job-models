@@ -17,9 +17,9 @@ class Job extends \Illuminate\Database\Eloquent\Model
         'created_at' => 'datetime',
     ];
 
-    public function __construct()
+    public function __construct(array $attributes = [])
     {
-        parent::__construct();
+        parent::__construct($attributes);
         $this->table = Config::get('queue.connections.' . (Config::get('queue.default', 'database')) . '.table', 'jobs');
     }
 }
